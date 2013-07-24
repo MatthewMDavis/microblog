@@ -41,15 +41,16 @@ gem 'puma'
 group :development, :test do
   gem 'rspec-rails'
   gem 'childprocess'
-  gem 'spork'
+  gem 'spork-rails', :github => 'sporkrb/spork-rails'
 end
 
 group :test do
   gem 'capybara'
   gem 'factory_girl_rails'
-  gem 'cucumber-rails'
   gem 'selenium-webdriver'
 end
+
+# gem 'cucumber-rails', group: :test
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
