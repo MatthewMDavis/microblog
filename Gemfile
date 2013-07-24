@@ -38,10 +38,17 @@ end
 # Use puma as the app server
 gem 'puma'
 
+group :development do
+  gem 'awesome_print'
+  gem 'pry-rails' 
+end
+
 group :development, :test do
   gem 'rspec-rails'
+  gem 'guard-rspec'
   gem 'childprocess'
   gem 'spork-rails', :github => 'sporkrb/spork-rails'
+	gem 'guard-spork'
 end
 
 group :test do
