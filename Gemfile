@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+# Translate bootstrap's LESS framework to SCSS
+gem 'bootstrap-sass', '2.3.2.0'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 
