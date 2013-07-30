@@ -40,6 +40,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use puma as the app server
 gem 'puma'
+gem 'guard-puma'
 
 group :development do
   gem 'awesome_print'
@@ -56,7 +57,7 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', "~> 4.0"
   gem 'selenium-webdriver'
 end
 
