@@ -33,9 +33,9 @@ describe "Authentication" do
         click_button "Log In"
       end
 
-      it { should have_selector('title',  text: user.name) }
+      it { should have_title(user.name) }
       it { should have_link('Profile',    href: user_path(user)) }
-      it { should have_link('Sign out',   href: logout_path) }
+      it { should have_link('Log out',   href: logout_path) }
       it { should_not have_link('Log in', href: login_path) }
     end
   end
