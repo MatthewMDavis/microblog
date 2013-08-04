@@ -36,8 +36,14 @@ describe "UserPages" do
       describe "after signup submission" do
         before { click_button submit }
         let(:user) { User.find_by(email: 'mattmdavis@gmail.com') }
+        
+        it { should have_link('Log out') }
         it { should have_title(user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }
+        describe "followed by signout" do
+          before { click_link('Log out') }
+          it { should have_link('Log in') }
+        end
       end
     end
   end
