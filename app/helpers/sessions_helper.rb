@@ -20,7 +20,7 @@ module SessionsHelper
     @current_user ||= User.find_by(remember_token: lookup_tok)
   end
 
-  def signed_in?
+  def logged_in? 
     !current_user.nil?
   end
 end
