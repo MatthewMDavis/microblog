@@ -5,6 +5,9 @@ describe User do
             password:'foobar', password_confirmation:'foobar') }
   subject { @user }
   it { should be_valid }
+  it { should respond_to(:admin) }
+  it { should_not be_admin } 
+
   it { should respond_to(:email) } 
   it { should respond_to(:name) }
   it { should respond_to(:password_digest) }
@@ -12,6 +15,16 @@ describe User do
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:remember_token) }
   it { should respond_to(:authenticate)}
+
+
+
+  describe "with user permissions set to admin" do
+     before do
+       @user.save!
+       @user.toggle!(:admin)
+     end
+     it { should be_admin }
+   end 
 
   describe "an overlong name" do
     before { @user.name = 'x' * 51 }

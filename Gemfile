@@ -6,9 +6,13 @@ gem 'rails', '4.0.0'
 # Translate bootstrap's LESS framework to SCSS
 gem 'bootstrap-sass', '2.3.2.0'
 
+# paginate data queries
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
-
+gem 'faker'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

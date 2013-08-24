@@ -1,8 +1,13 @@
 FactoryGirl.define do
-  factory :user do
-    name     "dj moonbat"
-    email    "dj.moonbat@gmail.com"
-    password "foobar"
-    password_confirmation "foobar"
+  factory :user do |u|
+    u.sequence(:name)   { |n| "Person #{n}" }
+    u.sequence(:email)  { |n| "person_#{n}@example.com" }
+    u.password "foobar"
+    u.password_confirmation "foobar"
+
+    # create sub-category of admin
+    factory :admin do
+      admin true
+    end
   end
 end
