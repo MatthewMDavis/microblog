@@ -108,12 +108,12 @@ describe User do
     describe "with invalid password" do
       let(:user_for_invalid_password) { found_user.authenticate("invalid") }
       it { should_not eq user_for_invalid_password }
-      specify { expect(user_for_invalid_password).to be_false }
+      specify { expect(user_for_invalid_password).to be false }
     end
   end
   describe "remember token" do
     before { @user.save }
-    its(:remember_token) { should_not be_blank }
+    specify {expect(subject.remember_token).not_to be_blank}
   end
 end
 
