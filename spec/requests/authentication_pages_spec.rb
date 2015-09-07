@@ -95,7 +95,7 @@ describe "Authentication" do
           it { should have_title('Log In')  }
         end
 
-        describe "visiting the edit page" do
+      describe "visiting the edit page" do
           before { visit edit_user_path(user) }
           it { should have_title('Log In') }
         end
