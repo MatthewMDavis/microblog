@@ -52,14 +52,19 @@ group :development do
 end
 
 group :development, :test do
+  gem 'spring-commands-rspec'
   gem 'rspec-rails'
   gem 'guard-rspec'
-  gem 'childprocess'
-  gem 'spork-rails', :github => 'sporkrb/spork-rails'
-	gem 'guard-spork'
+  gem 'rb-fsevent' if `uname` =~ /Darwin/
+  gem 'byebug',      '3.4.0'
+  gem 'web-console', '2.0.0.beta3'
+  gem 'spring',             '1.1.3'
 end
 
 group :test do
+  gem 'minitest-reporters', '1.0.5'
+  gem 'mini_backtrace',     '0.1.3'
+  gem 'guard-minitest',     '2.3.1'
   gem 'capybara'
   gem 'factory_girl_rails', "~> 4.0"
   gem 'selenium-webdriver'
