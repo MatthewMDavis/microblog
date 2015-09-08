@@ -44,7 +44,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use puma as the app server
 gem 'puma'
-gem 'guard-puma'
 
 group :development do
   gem 'awesome_print'
@@ -52,19 +51,13 @@ group :development do
 end
 
 group :development, :test do
-  gem 'spring-commands-rspec'
   gem 'rspec-rails', '~> 3.0'
-  gem 'guard-rspec'
   gem 'rb-fsevent' if `uname` =~ /Darwin/
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
-  gem 'spring',             '1.1.3'
 end
 
 group :test do
-  gem 'minitest-reporters', '1.0.5'
-  gem 'mini_backtrace',     '0.1.3'
-  gem 'guard-minitest',     '2.3.1'
   gem 'capybara',           '2.1.0'
   gem 'factory_girl_rails', "~> 4.0"
   gem 'selenium-webdriver', "2.47.1"
