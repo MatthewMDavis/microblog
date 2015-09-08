@@ -15,5 +15,15 @@
 /log/*.log
 /tmp
 
+# Ignore other unneeded files.
+database.yml
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+
 # Ignore Spring files.
 /spring/*.pid
