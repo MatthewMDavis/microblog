@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe User do
   before { @user = User.new(name:'Matt Davis', email:'mattmdavis@gmail.com',

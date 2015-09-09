@@ -34,7 +34,7 @@ describe "UserPages" do
           visit users_path
         end
 
-        it { should have_link('delete'), href: user_path(User.first) }
+        it { should have_link('delete', href: user_path(User.first)) }
         it { should_not have_link('delete', href: user_path(admin)) }
 
         it "should be able to delete another user" do

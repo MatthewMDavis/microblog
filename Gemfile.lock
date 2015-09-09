@@ -215,7 +215,7 @@ DEPENDENCIES
   byebug (= 3.4.0)
   capybara (~> 2.2.0)
   coffee-rails (~> 4.0.0)
-  factory_girl_rails (~> 4.0)
+  factory_girl_rails (~> 4.5.0)
   faker
   jbuilder (~> 2.3.1)
   jquery-rails (~> 3.0.4)
