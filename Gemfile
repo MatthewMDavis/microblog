@@ -52,7 +52,6 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
-  gem 'rb-fsevent' if `uname` =~ /Darwin/
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
 end
@@ -62,7 +61,9 @@ group :test do
   gem 'factory_girl_rails', "~> 4.5.0"
   gem 'selenium-webdriver', "2.47.1"
 end
-
+group :test, :darwin do
+  gem 'rb-fsevent'
+end
 group :production do
   gem 'rails_12factor', '0.0.2'
 end
