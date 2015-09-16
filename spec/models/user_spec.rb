@@ -1,5 +1,4 @@
 require 'rails_helper'
-
 describe User do
   before { @user = User.new(name:'Matt Davis', email:'mattmdavis@gmail.com',
             password:'foobar', password_confirmation:'foobar') }
@@ -114,6 +113,24 @@ describe User do
   describe "remember token" do
     before { @user.save }
     specify {expect(subject.remember_token).not_to be_blank}
+  end
+  describe "micropost associations" do
+    before { @user.save }
+    let!(:older_micropost) do
+      FactoryGirl.create(:micropost, user: @user, created_at: 1.day.ago)
+    end
+    let!(:newer_micropost) { FactoryGirl.create(:micropost, user: @user, created_at: 1.hour.ago) }
+    it "should return microposts in the right order" do
+      expect(@user.microposts.to_a).to eq([newer_micropost, older_micropost])
+    end
+    it "should destroy user microposts when user is destroyed" do
+      microposts = @user.microposts.to_a
+      @user.destroy
+      expect(microposts).not_to be_empty
+      microposts.each do |tweet|
+        expect(Micropost.where(id: tweet.id)).to be_empty
+      end
+    end
   end
 end
 
