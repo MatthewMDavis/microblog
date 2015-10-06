@@ -1,4 +1,4 @@
-/usr/local/var/rbenv/versions/2.2.1/bin/ruby -r ./siteconf20150907-69262-1gxsqdw.rb extconf.rb 
+/usr/local/var/rbenv/versions/2.2.1/bin/ruby -r ./siteconf20151005-64167-j9ew9t.rb extconf.rb
 checking for pg_config... yes
 Using config values from /usr/local/bin/pg_config
 checking for libpq-fe.h... yes
@@ -21,7 +21,7 @@ checking for PQsetClientEncoding()... yes
 checking for PQlibVersion()... yes
 checking for PQping()... yes
 checking for PQsetSingleRowMode()... yes
-checking for PQconninfo()... no
+checking for PQconninfo()... yes
 checking for rb_encdb_alias()... yes
 checking for rb_enc_alias()... yes
 checking for rb_thread_call_without_gvl()... yes
@@ -32,7 +32,7 @@ checking for rb_str_modify_expand()... yes
 checking for rb_hash_dup()... yes
 checking for PGRES_COPY_BOTH in libpq-fe.h... yes
 checking for PGRES_SINGLE_TUPLE in libpq-fe.h... yes
-checking for PG_DIAG_TABLE_NAME in libpq-fe.h... no
+checking for PG_DIAG_TABLE_NAME in libpq-fe.h... yes
 checking for struct pgNotify.extra in libpq-fe.h... yes
 checking for unistd.h... yes
 checking for ruby/st.h... yes
@@ -69,4 +69,4 @@ compiling util.c
 linking shared-object pg_ext.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20150907-69262-e4m8rk
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20151005-64167-10qflpu

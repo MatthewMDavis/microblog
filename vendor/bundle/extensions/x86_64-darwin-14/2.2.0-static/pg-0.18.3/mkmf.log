@@ -2,7 +2,7 @@ find_executable: checking for pg_config... -------------------- yes
 
 --------------------
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -13,7 +13,7 @@ checked program was:
 6: }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -23,7 +23,7 @@ checked program was:
 
 find_header: checking for libpq-fe.h... -------------------- yes
 
-"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -35,7 +35,7 @@ checked program was:
 
 find_header: checking for libpq/libpq-fs.h... -------------------- yes
 
-"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -47,7 +47,7 @@ checked program was:
 
 find_header: checking for pg_config_manual.h... -------------------- yes
 
-"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -59,7 +59,7 @@ checked program was:
 
 have_library: checking for PQconnectdb() in -lpq... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib     -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib     -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -83,7 +83,7 @@ checked program was:
 
 have_func: checking for PQconnectionUsedPassword()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQconnectionUsedPassword'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQconnectionUsedPassword; return 0; }
                                                         ^
@@ -105,7 +105,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQconnectionUsedPassword; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQconnectionUsedPassword' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQconnectionUsedPassword(); return 0; }
               ^
@@ -131,7 +131,7 @@ checked program was:
 
 have_func: checking for PQisthreadsafe()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQisthreadsafe'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQisthreadsafe; return 0; }
                                                         ^
@@ -153,7 +153,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQisthreadsafe; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQisthreadsafe' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQisthreadsafe(); return 0; }
               ^
@@ -179,7 +179,7 @@ checked program was:
 
 have_func: checking for PQprepare()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQprepare'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQprepare; return 0; }
                                                         ^
@@ -201,7 +201,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQprepare; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQprepare' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQprepare(); return 0; }
               ^
@@ -227,7 +227,7 @@ checked program was:
 
 have_func: checking for PQexecParams()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQexecParams'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQexecParams; return 0; }
                                                         ^
@@ -249,7 +249,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQexecParams; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQexecParams' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQexecParams(); return 0; }
               ^
@@ -275,7 +275,7 @@ checked program was:
 
 have_func: checking for PQescapeString()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQescapeString'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQescapeString; return 0; }
                                                         ^
@@ -297,7 +297,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQescapeString; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQescapeString' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQescapeString(); return 0; }
               ^
@@ -323,7 +323,7 @@ checked program was:
 
 have_func: checking for PQescapeStringConn()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQescapeStringConn'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQescapeStringConn; return 0; }
                                                         ^
@@ -345,7 +345,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQescapeStringConn; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQescapeStringConn' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQescapeStringConn(); return 0; }
               ^
@@ -371,7 +371,7 @@ checked program was:
 
 have_func: checking for PQescapeLiteral()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQescapeLiteral'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQescapeLiteral; return 0; }
                                                         ^
@@ -393,7 +393,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQescapeLiteral; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQescapeLiteral' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQescapeLiteral(); return 0; }
               ^
@@ -419,7 +419,7 @@ checked program was:
 
 have_func: checking for PQescapeIdentifier()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQescapeIdentifier'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQescapeIdentifier; return 0; }
                                                         ^
@@ -441,7 +441,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQescapeIdentifier; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQescapeIdentifier' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQescapeIdentifier(); return 0; }
               ^
@@ -467,7 +467,7 @@ checked program was:
 
 have_func: checking for PQgetCancel()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQgetCancel'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQgetCancel; return 0; }
                                                         ^
@@ -489,7 +489,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQgetCancel; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQgetCancel' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQgetCancel(); return 0; }
               ^
@@ -515,7 +515,7 @@ checked program was:
 
 have_func: checking for lo_create()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'lo_create'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))lo_create; return 0; }
                                                         ^
@@ -537,7 +537,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))lo_create; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'lo_create' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { lo_create(); return 0; }
               ^
@@ -563,7 +563,7 @@ checked program was:
 
 have_func: checking for pg_encoding_to_char()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'pg_encoding_to_char'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))pg_encoding_to_char; return 0; }
                                                         ^
@@ -585,7 +585,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))pg_encoding_to_char; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'pg_encoding_to_char' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { pg_encoding_to_char(); return 0; }
               ^
@@ -611,7 +611,7 @@ checked program was:
 
 have_func: checking for pg_char_to_encoding()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'pg_char_to_encoding'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))pg_char_to_encoding; return 0; }
                                                         ^
@@ -633,7 +633,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))pg_char_to_encoding; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'pg_char_to_encoding' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { pg_char_to_encoding(); return 0; }
               ^
@@ -659,7 +659,7 @@ checked program was:
 
 have_func: checking for PQsetClientEncoding()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQsetClientEncoding'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQsetClientEncoding; return 0; }
                                                         ^
@@ -681,7 +681,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQsetClientEncoding; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQsetClientEncoding' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQsetClientEncoding(); return 0; }
               ^
@@ -707,7 +707,7 @@ checked program was:
 
 have_func: checking for PQlibVersion()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQlibVersion'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQlibVersion; return 0; }
                                                         ^
@@ -729,7 +729,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQlibVersion; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQlibVersion' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQlibVersion(); return 0; }
               ^
@@ -755,7 +755,7 @@ checked program was:
 
 have_func: checking for PQping()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQping'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQping; return 0; }
                                                         ^
@@ -777,7 +777,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQping; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQping' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQping(); return 0; }
               ^
@@ -803,7 +803,7 @@ checked program was:
 
 have_func: checking for PQsetSingleRowMode()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQsetSingleRowMode'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQsetSingleRowMode; return 0; }
                                                         ^
@@ -825,7 +825,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQsetSingleRowMode; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQsetSingleRowMode' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQsetSingleRowMode(); return 0; }
               ^
@@ -849,9 +849,9 @@ checked program was:
 
 --------------------
 
-have_func: checking for PQconninfo()... -------------------- no
+have_func: checking for PQconninfo()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'PQconninfo'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))PQconninfo; return 0; }
                                                         ^
@@ -873,16 +873,11 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))PQconninfo; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'PQconninfo' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { PQconninfo(); return 0; }
               ^
 1 warning generated.
-Undefined symbols for architecture x86_64:
-  "_PQconninfo", referenced from:
-      _t in conftest-33aec3.o
-ld: symbol(s) not found for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -904,7 +899,7 @@ checked program was:
 
 have_func: checking for rb_encdb_alias()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_encdb_alias'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_encdb_alias; return 0; }
                                                         ^
@@ -926,7 +921,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_encdb_alias; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'rb_encdb_alias' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { rb_encdb_alias(); return 0; }
               ^
@@ -952,7 +947,7 @@ checked program was:
 
 have_func: checking for rb_enc_alias()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_enc_alias'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_alias; return 0; }
                                                         ^
@@ -974,7 +969,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_alias; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'rb_enc_alias' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { rb_enc_alias(); return 0; }
               ^
@@ -1000,7 +995,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_without_gvl()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_thread_call_without_gvl'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return 0; }
                                                         ^
@@ -1022,7 +1017,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'rb_thread_call_without_gvl' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { rb_thread_call_without_gvl(); return 0; }
               ^
@@ -1048,7 +1043,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_with_gvl()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_thread_call_with_gvl'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return 0; }
                                                         ^
@@ -1070,7 +1065,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'rb_thread_call_with_gvl' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { rb_thread_call_with_gvl(); return 0; }
               ^
@@ -1096,7 +1091,7 @@ checked program was:
 
 have_func: checking for rb_thread_fd_select()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1118,7 +1113,7 @@ checked program was:
 
 have_func: checking for rb_w32_wrap_io_handle()... -------------------- no
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_w32_wrap_io_handle'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_w32_wrap_io_handle; return 0; }
                                                         ^
@@ -1140,14 +1135,14 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_w32_wrap_io_handle; return 0; }
 /* end */
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'rb_w32_wrap_io_handle' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { rb_w32_wrap_io_handle(); return 0; }
               ^
 1 warning generated.
 Undefined symbols for architecture x86_64:
   "_rb_w32_wrap_io_handle", referenced from:
-      _t in conftest-4c53da.o
+      _t in conftest-b5074c.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -1171,7 +1166,7 @@ checked program was:
 
 have_func: checking for rb_str_modify_expand()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1193,7 +1188,7 @@ checked program was:
 
 have_func: checking for rb_hash_dup()... -------------------- yes
 
-"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.2.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.2.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
+"clang -o conftest -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L/usr/local/Cellar/postgresql/9.4.4/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib -L. -L/usr/local/var/rbenv/versions/2.2.1/lib  -fstack-protector -Wl,-rpath,/usr/local/Cellar/postgresql/9.4.4/lib    -lpq  -lruby-static -framework CoreFoundation -lpq  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1215,7 +1210,7 @@ checked program was:
 
 have_const: checking for PGRES_COPY_BOTH in libpq-fe.h... -------------------- yes
 
-"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -1231,7 +1226,7 @@ checked program was:
 
 have_const: checking for PGRES_SINGLE_TUPLE in libpq-fe.h... -------------------- yes
 
-"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -1245,13 +1240,9 @@ checked program was:
 
 --------------------
 
-have_const: checking for PG_DIAG_TABLE_NAME in libpq-fe.h... -------------------- no
+have_const: checking for PG_DIAG_TABLE_NAME in libpq-fe.h... -------------------- yes
 
-"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
-conftest.c:7:34: error: use of undeclared identifier 'PG_DIAG_TABLE_NAME'
-conftest_type conftestval = (int)PG_DIAG_TABLE_NAME;
-                                 ^
-1 error generated.
+"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -1267,7 +1258,7 @@ checked program was:
 
 have_struct_member: checking for struct pgNotify.extra in libpq-fe.h... -------------------- yes
 
-"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -1286,7 +1277,7 @@ checked program was:
 
 have_header: checking for unistd.h... -------------------- yes
 
-"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -1298,7 +1289,7 @@ checked program was:
 
 have_header: checking for ruby/st.h... -------------------- yes
 
-"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"clang -E -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -1310,7 +1301,7 @@ checked program was:
 
 checking for C99 variable length arrays... -------------------- yes
 
-"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.2.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"clang -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/usr/local/var/rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/usr/local/Cellar/postgresql/9.4.4/include -I/usr/local/var/rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -1340,21 +1331,23 @@ extconf.h is:
 16: #define HAVE_PQLIBVERSION 1
 17: #define HAVE_PQPING 1
 18: #define HAVE_PQSETSINGLEROWMODE 1
-19: #define HAVE_RB_ENCDB_ALIAS 1
-20: #define HAVE_RB_ENC_ALIAS 1
-21: #define HAVE_RB_THREAD_CALL_WITHOUT_GVL 1
-22: #define HAVE_RB_THREAD_CALL_WITH_GVL 1
-23: #define HAVE_RB_THREAD_FD_SELECT 1
-24: #define HAVE_RB_STR_MODIFY_EXPAND 1
-25: #define HAVE_RB_HASH_DUP 1
-26: #define HAVE_CONST_PGRES_COPY_BOTH 1
-27: #define HAVE_CONST_PGRES_SINGLE_TUPLE 1
-28: #define HAVE_STRUCT_PGNOTIFY_EXTRA 1
-29: #define HAVE_ST_EXTRA 1
-30: #define HAVE_ST_NOTIFY_EXTRA 1
-31: #define HAVE_UNISTD_H 1
-32: #define HAVE_RUBY_ST_H 1
-33: #define HAVE_VARIABLE_LENGTH_ARRAYS 1
-34: #endif
+19: #define HAVE_PQCONNINFO 1
+20: #define HAVE_RB_ENCDB_ALIAS 1
+21: #define HAVE_RB_ENC_ALIAS 1
+22: #define HAVE_RB_THREAD_CALL_WITHOUT_GVL 1
+23: #define HAVE_RB_THREAD_CALL_WITH_GVL 1
+24: #define HAVE_RB_THREAD_FD_SELECT 1
+25: #define HAVE_RB_STR_MODIFY_EXPAND 1
+26: #define HAVE_RB_HASH_DUP 1
+27: #define HAVE_CONST_PGRES_COPY_BOTH 1
+28: #define HAVE_CONST_PGRES_SINGLE_TUPLE 1
+29: #define HAVE_CONST_PG_DIAG_TABLE_NAME 1
+30: #define HAVE_STRUCT_PGNOTIFY_EXTRA 1
+31: #define HAVE_ST_EXTRA 1
+32: #define HAVE_ST_NOTIFY_EXTRA 1
+33: #define HAVE_UNISTD_H 1
+34: #define HAVE_RUBY_ST_H 1
+35: #define HAVE_VARIABLE_LENGTH_ARRAYS 1
+36: #endif
 /* end */
 
