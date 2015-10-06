@@ -15,6 +15,14 @@ module SessionsHelper
     @current_user = user
   end
 
+  
+  def signed_in_user
+    unless logged_in?      
+      store_location
+      redirect_to login_url, notice: "Please log in." 
+    end
+  end
+
   def current_user
     lookup_tok = User.encrypt(cookies[:remember_token])
     @current_user ||= User.find_by(remember_token: lookup_tok)

@@ -10,7 +10,7 @@ RSpec.describe Micropost, type: :model do
   it { should respond_to(:user_id) }
   it { should be_valid }
   it { should respond_to(:user) }
-  it { expect(subject.user).to eq(user) }
+  specify { expect(subject.user).to eq(user) }
 
   describe "when user id is not present" do
  	before { @micropost.user_id = nil }	
