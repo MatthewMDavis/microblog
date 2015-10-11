@@ -5,9 +5,8 @@ describe User do
   subject { @user }
   it { should be_valid }
   it { should respond_to(:admin) }
-  it { should_not be_admin } 
-
-  it { should respond_to(:email) } 
+  it { should_not be_admin }
+  it { should respond_to(:email) }
   it { should respond_to(:name) }
   it { should respond_to(:password_digest) }
   it { should respond_to(:password) }
@@ -23,7 +22,7 @@ describe User do
        @user.toggle!(:admin)
      end
      it { should be_admin }
-   end 
+   end
 
   describe "an overlong name" do
     before { @user.name = 'x' * 51 }
@@ -42,7 +41,7 @@ describe User do
 
   describe "with a properly formatted email addy" do
     it "should be valid" do
-      addresses = %w[user@foo.COM A_US-ER@f.b.org frst.lst@foo.jp a+b@baz.cn] 
+      addresses = %w[user@foo.COM A_US-ER@f.b.org frst.lst@foo.jp a+b@baz.cn]
       addresses.each do |valid_email|
         @user.email = valid_email
         expect(@user).to be_valid
@@ -53,7 +52,7 @@ describe User do
   describe "with a badly formatted email addy" do
     it "should be invalid" do
       addresses = %w[user@foo,com user_at_foo.org example.user@foo.
-                     foo@bar_baz.com foo@bar+baz.com foo@bar..com] 
+                     foo@bar_baz.com foo@bar+baz.com foo@bar..com]
       addresses.each do |invalid_addy|
         @user.email = invalid_addy
         expect(@user).not_to be_valid
@@ -64,7 +63,7 @@ describe User do
   describe "with a mixed-case email addy" do
     let(:mixed_case_email) { 'MixedCase@miXtape.com' }
     it "should save in lower case" do
-      @user.email = mixed_case_email 
+      @user.email = mixed_case_email
       @user.save
       expect(@user.reload.email).to eq mixed_case_email.downcase
     end
@@ -76,7 +75,7 @@ describe User do
       user_with_same_email.save
     end
     it { should_not be_valid }
-  end 
+  end
 
   describe "when password is not present" do
     before do
@@ -99,7 +98,7 @@ describe User do
   describe "return value of authenticate method" do
     before { @user.save }
     let(:found_user) { User.find_by(email: @user.email) }
-    
+
     describe "with valid password" do
       it { should eq found_user.authenticate(@user.password) }
     end
@@ -129,6 +128,17 @@ describe User do
       expect(microposts).not_to be_empty
       microposts.each do |tweet|
         expect(Micropost.where(id: tweet.id)).to be_empty
+      end
+    end
+    describe "status" do
+      let(:unfollowed_post) do
+        other_user = FactoryGirl.create(:user)
+        FactoryGirl.create(:micropost, user: other_user)
+      end
+      it 'contains only the correct microposts' do
+        expect(subject.feed).to include newer_micropost
+        expect(subject.feed).to include older_micropost
+        expect(subject.feed).not_to include unfollowed_post
       end
     end
   end

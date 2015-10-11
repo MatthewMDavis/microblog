@@ -17,6 +17,9 @@ end
 def User.encrypt(tok)
   Digest::SHA1.hexdigest(tok.to_s)
 end
+def feed
+  Micropost.where("user_id = ?", id)
+end
   private
 
     def create_remember_token
