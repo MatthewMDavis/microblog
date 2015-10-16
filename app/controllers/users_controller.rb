@@ -11,12 +11,12 @@ class UsersController < ApplicationController
   end
 
   def show
-     @user = User.find(params[:id]) 
+     @user = User.find(params[:id])
      @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def create
-    @user = User.new(user_params)    
+    @user = User.new(user_params)
     if @user.save
       sign_in @user
       flash[:success] = 'Welcome to The Back 140!'
@@ -27,6 +27,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.find(params[:id])
   end
 
   def update
@@ -36,7 +37,7 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       render 'edit'
-    end   
+    end
   end
 
   def destroy
@@ -52,7 +53,7 @@ class UsersController < ApplicationController
   end
 
   def admin_user
-    redirect_to root_path unless current_user.admin? 
+    redirect_to root_path unless current_user.admin?
   end
 
 private
