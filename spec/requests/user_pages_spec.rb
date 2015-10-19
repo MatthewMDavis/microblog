@@ -51,11 +51,11 @@ describe "UserPages" do
       before(:all) { 30.times { FactoryGirl.create(:user) } }
       after(:all) { User.delete_all }
 
-      it { should have_selector('div.pagination') } 
-      
+      it { should have_selector('div.pagination') }
+
       it "should list each user" do
         User.paginate(page: 1).each do |site_user|
-          expect(page).to have_selector('li', text: site_user.name)  
+          expect(page).to have_selector('li', text: site_user.name)
         end
       end
     end
@@ -63,9 +63,19 @@ describe "UserPages" do
 
   describe "profile page" do
     let(:user) { FactoryGirl.create(:user) }
+    let!(:m1) { FactoryGirl.create(:micropost, user: user, content: "Fake Content") }
+    let!(:m2) { FactoryGirl.create(:micropost, user: user, content: "More fake Content") }
+
     before { visit user_path(user) }
+
     it { should have_content(user.name) }
     it { should have_title(user.name) }
+
+    describe "microposts" do
+      it { should have_content(m1.content) }
+      it { should have_content(m2.content) }
+      it { should have_content(user.microposts.count) }
+    end
   end
 
   describe "signup" do
@@ -73,7 +83,7 @@ describe "UserPages" do
     let(:submit) { "Create my account"}
     describe "with invalid user info" do
     	it "should not create a user record" do
-    		expect{ click_button submit }.not_to change(User, :count)	
+    		expect{ click_button submit }.not_to change(User, :count)
     	end
     end
     describe "with valid user info" do
@@ -89,7 +99,7 @@ describe "UserPages" do
       describe "after signup submission" do
         before { click_button submit }
         let(:user) { User.find_by(email: 'mattmdavis@gmail.com') }
-        
+
         it { should have_link('Log out') }
         it { should have_title(user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }

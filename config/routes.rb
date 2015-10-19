@@ -2,6 +2,7 @@ Microblog::Application.routes.draw do
   root to: 'static_pages#home'
   resources :users # comment for testing of guard...now! huh?
   resources :sessions, only: [:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy]
   match '/login', to: 'sessions#new', via: 'get'
   match '/logout', to: 'sessions#destroy', via: 'delete'
   match '/help', to: 'static_pages#help', via: 'get'

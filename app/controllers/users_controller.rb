@@ -11,11 +11,12 @@ class UsersController < ApplicationController
   end
 
   def show
-     @user = User.find(params[:id]) 
+     @user = User.find(params[:id])
+     @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def create
-    @user = User.new(user_params)    
+    @user = User.new(user_params)
     if @user.save
       sign_in @user
       flash[:success] = 'Welcome to The Back 140!'
@@ -26,6 +27,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.find(params[:id])
   end
 
   def update
@@ -35,7 +37,7 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       render 'edit'
-    end   
+    end
   end
 
   def destroy
@@ -43,32 +45,22 @@ class UsersController < ApplicationController
       flash[:success] = "User deleted"
       redirect_to users_path
   end
-      # Before filters
 
-    def signed_in_user
-      unless logged_in?      
-        store_location
-        redirect_to login_url, notice: "Please log in." 
-      end
-    end
+private
+# Before filters
+  def correct_user
+    @user = User.find(params[:id])
+    redirect_to root_path unless current_user?(@user)
+  end
 
-    def correct_user
-      @user = User.find(params[:id])
-      redirect_to root_path unless current_user?(@user)
-    end
+  def admin_user
+    redirect_to root_path unless current_user.admin?
+  end
 
-    def admin_user
-      redirect_to root_path unless current_user.admin? 
-    end
 
-  private
+  def user_params
+      params.require(:user).permit(:name, :email, :password,
+				   :password_confirmation)
+  end
 
-    def user_params
-        params.require(:user).permit(:name, :email, :password,
-                                     :password_confirmation)
-    end
-
-    def current_user?(user)
-     current_user == user
-    end
 end

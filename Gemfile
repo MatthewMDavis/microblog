@@ -51,6 +51,8 @@ group :development do
 end
 
 group :development, :test do
+  gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'rspec-rails', '~> 3.0'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
@@ -60,6 +62,8 @@ group :test do
   gem 'capybara',           '~> 2.2.0'
   gem 'factory_girl_rails', "~> 4.5.0"
   gem 'selenium-webdriver', "2.47.1"
+  gem 'guard-rspec'
+  gem 'growl',              "1.0.3"
 end
 group :test, :darwin do
   gem 'rb-fsevent'

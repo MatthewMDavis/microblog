@@ -41,7 +41,7 @@ describe "Authentication" do
       it { should_not have_link('Log in', href: login_path) }
     end
   end
-  
+
   describe "authorization" do
     describe "as non-admin user" do
       let(:user) { FactoryGirl.create(:user) }
@@ -66,7 +66,6 @@ describe "Authentication" do
           click_button 'Log In'
         end
         describe "after signing in" do
-
           it "should render the desired protected page" do
             expect(page).to have_title('Edit User')
           end
@@ -84,7 +83,7 @@ describe "Authentication" do
               expect(page).to have_title(user.name)
             end
           end
-        end 
+        end
       end
 
 
@@ -105,6 +104,16 @@ describe "Authentication" do
           specify { expect(response).to redirect_to(login_path) }
         end
 
+      end
+      describe "in the Microposts controller" do
+	describe "submitting to the create action" do
+	  before { post microposts_path }
+	  specify { expect(response).to redirect_to(login_path) }
+	end
+	describe "submitting to the destroy action" do
+	  before { delete micropost_path(FactoryGirl.create(:micropost))}
+	  specify { expect(response).to redirect_to(login_path)}
+	end
       end
     end
 
