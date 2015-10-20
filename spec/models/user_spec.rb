@@ -14,7 +14,13 @@ describe User do
   it { should respond_to(:remember_token) }
   it { should respond_to(:authenticate)}
   it { should respond_to(:microposts) }
-
+  it { should respond_to(:feed) }
+  it { should respond_to(:relationships) }
+  it { should respond_to(:followed_users) }
+  it { should respond_to(:follow!) }
+  it { should respond_to(:unfollow!) }
+  it { should respond_to(:reverse_relationships) }
+  it { should respond_to(:followers) }
 
   describe "with user permissions set to admin" do
      before do
@@ -109,10 +115,12 @@ describe User do
       specify { expect(user_for_invalid_password).to be false }
     end
   end
+
   describe "remember token" do
     before { @user.save }
     specify {expect(subject.remember_token).not_to be_blank}
   end
+
   describe "micropost associations" do
     before { @user.save }
     let!(:older_micropost) do
@@ -139,6 +147,31 @@ describe User do
         expect(subject.feed).to include newer_micropost
         expect(subject.feed).to include older_micropost
         expect(subject.feed).not_to include unfollowed_post
+      end
+    end
+  end
+
+  describe "following" do
+    let(:other_user) { FactoryGirl.create(:user) }
+    before do
+      @user.save
+      @user.follow!(other_user)
+    end
+    it { should be_following(other_user) }
+    it 'has other_user among its followed_users' do
+      expect(subject.followed_users).to include(other_user)
+    end
+    
+    describe "by some other user" do
+      it 'appears among followers of other_user' do
+        expect(other_user.followers).to include(@user)
+      end
+    end
+    describe "and unfollowing" do
+      before { @user.unfollow!(other_user) }
+      it { should_not be_following(other_user) }
+      it 'no longer has other_user among followed_users' do
+        expect(subject.followed_users).not_to include(other_user)
       end
     end
   end
