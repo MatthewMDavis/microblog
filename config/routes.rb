@@ -1,6 +1,10 @@
 Microblog::Application.routes.draw do
   root to: 'static_pages#home'
-  resources :users # comment for testing of guard...now! huh?
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   resources :sessions, only: [:new, :create, :destroy]
   resources :microposts, only: [:create, :destroy]
   match '/login', to: 'sessions#new', via: 'get'
