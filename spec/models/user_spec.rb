@@ -140,13 +140,25 @@ describe User do
     end
     describe "status" do
       let(:unfollowed_post) do
-        other_user = FactoryGirl.create(:user)
-        FactoryGirl.create(:micropost, user: other_user)
+        FactoryGirl.create(:micropost, user:  FactoryGirl.create(:user))
       end
+      let(:followed_user) { FactoryGirl.create(:user) }
+
+      before do
+        @user.follow!(followed_user)
+        3.times { followed_user.microposts.create!(content: "Lorem ipsum") }
+      end
+
       it 'contains only the correct microposts' do
-        expect(subject.feed).to include newer_micropost
-        expect(subject.feed).to include older_micropost
-        expect(subject.feed).not_to include unfollowed_post
+        expect(subject.feed).to include(newer_micropost)
+        expect(subject.feed).to include(older_micropost)
+        expect(subject.feed).not_to include(unfollowed_post)
+      end
+
+      it 'contains microposts from followed user' do
+        followed_user.microposts.each do |micropost|
+          expect(subject.feed).to include(micropost)
+        end
       end
     end
   end

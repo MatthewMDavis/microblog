@@ -22,19 +22,19 @@ def User.encrypt(tok)
   Digest::SHA1.hexdigest(tok.to_s)
 end
 def feed
-  Micropost.where("user_id = ?", id)
+  Micropost.from_users_followed_by(self)
 end
 
 def following?(other_user)
-  self.relationships.find_by(followed_id: other_user.id)
+  relationships.find_by(followed_id: other_user.id)
 end
 
 def follow!(other_user)
-  self.relationships.create!(followed_id: other_user.id)
+  relationships.create!(followed_id: other_user.id)
 end
 
 def unfollow!(other_user)
-  self.relationships.find_by(followed_id: other_user.id).destroy
+  relationships.find_by(followed_id: other_user.id).destroy
 end
   private
 
